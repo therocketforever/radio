@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 ruby "2.0.0"
 
+require "drb"
+
 gem "thin"
 
 gem "sass"
