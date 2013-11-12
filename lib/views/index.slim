@@ -1,6 +1,6 @@
 h3 Simple Echo & Chat Server
 form#form
-  input#input type="text" value="send a message"
+  input#input type="text" placeholder="send a message"
 
 #msgs
 
@@ -20,7 +20,8 @@ javascript:
         input.onclick = function(){ input.value = "" };
         f.onsubmit    = function(){
           ws.send(input.value);
-          input.value = "send a message";
+          // Let's use the HTML placeholder attribute insted
+          //input.value = "send a message";
           return false;
         }
       }(document.getElementById('form'));
