@@ -14,6 +14,8 @@ gem "thor"
 gem "sinatra"
 gem "sinatra-websocket"
 
+gem "foreman"
+
 group :production do
 end
 
