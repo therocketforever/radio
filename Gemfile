@@ -4,6 +4,7 @@ ruby "2.0.0"
 
 require "drb"
 
+gem "rack"
 gem "thin"
 
 gem "sass"

@@ -131,6 +131,7 @@ DEPENDENCIES
   pry-doc
   pry-nav
   pry-stack_explorer
+  rack
   sass
   sinatra
   sinatra-websocket
