@@ -18,6 +18,7 @@ gem "sinatra"
 gem "sinatra-websocket"
 
 gem "foreman"
+gem "rainbow"
 
 group :production do
 end
