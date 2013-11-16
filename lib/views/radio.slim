@@ -1,0 +1,18 @@
+head
+  title Ember Starter Kit
+  link rel="stylesheet" href="css/normalize.css"
+  link rel="stylesheet" href="css/style.css"
+
+body
+  
+  script type="text/x-emblem"
+    | h2 Welcome to Ember.js
+    |   = outlet
+
+  script type="text/x-emblem" data-template-name="index"
+    | ul
+    |   each item in model
+    |     li = item
+
+  
+  script src="radio_app.js"
