@@ -1,18 +1,18 @@
 head
-  title Ember Starter Kit
-  link rel="stylesheet" href="css/normalize.css"
-  link rel="stylesheet" href="css/style.css"
+  title Radio!
 
 body
-  
+
   script type="text/x-emblem"
-    | h2 Welcome to Ember.js
-    |   = outlet
-
-  script type="text/x-emblem" data-template-name="index"
-    | ul
-    |   each item in model
-    |     li = item
-
+    == "#{Environment['radio.emblem']}"
   
-  script src="radio_app.js"
+  script type="text/x-emblem" data-template-name="index"
+    == "#{Environment['radio_index.emblem']}"
+  
+  javascript:
+    "#{Environment['radio_app.js']}"
+  
+
+  /script src="../radio.emblem" type="text/x-emblem"
+  /script src="../radio_index.emblem" type="text/x-emblem" data-template-name="index"
+  /script src="../radio_app.js"
